@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2815C3F927008A6C00E92475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C3F827008A6C00E92475 /* AppDelegate.swift */; };
+		2815C3FB27008A6C00E92475 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C3FA27008A6C00E92475 /* SceneDelegate.swift */; };
+		2815C40327008A6C00E92475 /* Tootle_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2815C40127008A6C00E92475 /* Tootle_Test.xcdatamodeld */; };
+		2815C40527008A7500E92475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2815C40427008A7500E92475 /* Assets.xcassets */; };
+		2815C40827008A7500E92475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2815C40627008A7500E92475 /* LaunchScreen.storyboard */; };
+		2815C41327008A7500E92475 /* Tootle_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C41227008A7500E92475 /* Tootle_TestTests.swift */; };
+		2815C41E27008A7500E92475 /* Tootle_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C41D27008A7500E92475 /* Tootle_TestUITests.swift */; };
+		2815C43C2700921400E92475 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C4372700921400E92475 /* Network.swift */; };
+		2815C43D2700921400E92475 /* TokenAddingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C4382700921400E92475 /* TokenAddingInterceptor.swift */; };
+		2815C43E2700921400E92475 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C4392700921400E92475 /* API.swift */; };
+		2815C43F2700921400E92475 /* AdvancedSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C43A2700921400E92475 /* AdvancedSample.swift */; };
+		2815C4402700921400E92475 /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C43B2700921400E92475 /* NetworkInterceptorProvider.swift */; };
+		2815C4592700958900E92475 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C4542700958900E92475 /* MasterViewController.swift */; };
+		2815C45A2700958900E92475 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C4552700958900E92475 /* ProfileViewController.swift */; };
+		2815C45B2700958900E92475 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C4562700958900E92475 /* DetailViewController.swift */; };
+		2815C45C2700958900E92475 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C4572700958900E92475 /* LoginViewController.swift */; };
+		2815C45D2700958900E92475 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C4582700958900E92475 /* UIViewController+Alert.swift */; };
+		2815C4652700959F00E92475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2815C4642700959E00E92475 /* Main.storyboard */; };
+		2815C470270095D300E92475 /* LaunchDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2815C46B270095D300E92475 /* LaunchDetails.graphql */; };
+		2815C471270095D300E92475 /* BookTrip.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2815C46C270095D300E92475 /* BookTrip.graphql */; };
+		2815C472270095D300E92475 /* CancelTrip.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2815C46D270095D300E92475 /* CancelTrip.graphql */; };
+		2815C473270095D300E92475 /* Login.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2815C46E270095D300E92475 /* Login.graphql */; };
+		2815C474270095D300E92475 /* LaunchList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2815C46F270095D300E92475 /* LaunchList.graphql */; };
+		2815C47A270095EC00E92475 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 2815C479270095EC00E92475 /* schema.json */; };
+		2815C4952700A8A900E92475 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 2815C4942700A8A900E92475 /* Apollo */; };
+		2815C4972700A8A900E92475 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 2815C4962700A8A900E92475 /* ApolloSQLite */; };
+		2815C49A2700A8F900E92475 /* Keychain in Frameworks */ = {isa = PBXBuildFile; productRef = 2815C4992700A8F900E92475 /* Keychain */; };
+		2815C4A02700A97200E92475 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2815C49F2700A97200E92475 /* SDWebImageSwiftUI */; };
+		2815C4A62700A9C200E92475 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2815C4A52700A9C200E92475 /* KeychainSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2815C40F27008A7500E92475 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2815C3ED27008A6C00E92475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2815C3F427008A6C00E92475;
+			remoteInfo = "Tootle Test";
+		};
+		2815C41A27008A7500E92475 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2815C3ED27008A6C00E92475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2815C3F427008A6C00E92475;
+			remoteInfo = "Tootle Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2815C3F527008A6C00E92475 /* Tootle Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tootle Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2815C3F827008A6C00E92475 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2815C3FA27008A6C00E92475 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2815C40227008A6C00E92475 /* Tootle_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tootle_Test.xcdatamodel; sourceTree = "<group>"; };
+		2815C40427008A7500E92475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2815C40727008A7500E92475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2815C40927008A7500E92475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2815C40E27008A7500E92475 /* Tootle TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tootle TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2815C41227008A7500E92475 /* Tootle_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tootle_TestTests.swift; sourceTree = "<group>"; };
+		2815C41427008A7500E92475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2815C41927008A7500E92475 /* Tootle TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tootle TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2815C41D27008A7500E92475 /* Tootle_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tootle_TestUITests.swift; sourceTree = "<group>"; };
+		2815C41F27008A7500E92475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2815C4372700921400E92475 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		2815C4382700921400E92475 /* TokenAddingInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenAddingInterceptor.swift; sourceTree = "<group>"; };
+		2815C4392700921400E92475 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2815C43A2700921400E92475 /* AdvancedSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedSample.swift; sourceTree = "<group>"; };
+		2815C43B2700921400E92475 /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
+		2815C4542700958900E92475 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		2815C4552700958900E92475 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2815C4562700958900E92475 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2815C4572700958900E92475 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2815C4582700958900E92475 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		2815C4642700959E00E92475 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2815C46B270095D300E92475 /* LaunchDetails.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LaunchDetails.graphql; sourceTree = "<group>"; };
+		2815C46C270095D300E92475 /* BookTrip.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BookTrip.graphql; sourceTree = "<group>"; };
+		2815C46D270095D300E92475 /* CancelTrip.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CancelTrip.graphql; sourceTree = "<group>"; };
+		2815C46E270095D300E92475 /* Login.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Login.graphql; sourceTree = "<group>"; };
+		2815C46F270095D300E92475 /* LaunchList.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
+		2815C479270095EC00E92475 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2815C3F227008A6C00E92475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2815C4A02700A97200E92475 /* SDWebImageSwiftUI in Frameworks */,
+				2815C4952700A8A900E92475 /* Apollo in Frameworks */,
+				2815C4A62700A9C200E92475 /* KeychainSwift in Frameworks */,
+				2815C49A2700A8F900E92475 /* Keychain in Frameworks */,
+				2815C4972700A8A900E92475 /* ApolloSQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2815C40B27008A7500E92475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2815C41627008A7500E92475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2815C3EC27008A6C00E92475 = {
+			isa = PBXGroup;
+			children = (
+				2815C3F727008A6C00E92475 /* Tootle Test */,
+				2815C41127008A7500E92475 /* Tootle TestTests */,
+				2815C41C27008A7500E92475 /* Tootle TestUITests */,
+				2815C3F627008A6C00E92475 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2815C3F627008A6C00E92475 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2815C3F527008A6C00E92475 /* Tootle Test.app */,
+				2815C40E27008A7500E92475 /* Tootle TestTests.xctest */,
+				2815C41927008A7500E92475 /* Tootle TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2815C3F727008A6C00E92475 /* Tootle Test */ = {
+			isa = PBXGroup;
+			children = (
+				2815C478270095DB00E92475 /* JSON */,
+				2815C46A270095B300E92475 /* GraphSql */,
+				2815C469270095A200E92475 /* Controller */,
+				2815C4532700957E00E92475 /* View Controller */,
+				2815C436270091FA00E92475 /* Data Fetch */,
+				2815C3F827008A6C00E92475 /* AppDelegate.swift */,
+				2815C3FA27008A6C00E92475 /* SceneDelegate.swift */,
+				2815C40427008A7500E92475 /* Assets.xcassets */,
+				2815C40627008A7500E92475 /* LaunchScreen.storyboard */,
+				2815C40927008A7500E92475 /* Info.plist */,
+				2815C40127008A6C00E92475 /* Tootle_Test.xcdatamodeld */,
+			);
+			path = "Tootle Test";
+			sourceTree = "<group>";
+		};
+		2815C41127008A7500E92475 /* Tootle TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				2815C41227008A7500E92475 /* Tootle_TestTests.swift */,
+				2815C41427008A7500E92475 /* Info.plist */,
+			);
+			path = "Tootle TestTests";
+			sourceTree = "<group>";
+		};
+		2815C41C27008A7500E92475 /* Tootle TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2815C41D27008A7500E92475 /* Tootle_TestUITests.swift */,
+				2815C41F27008A7500E92475 /* Info.plist */,
+			);
+			path = "Tootle TestUITests";
+			sourceTree = "<group>";
+		};
+		2815C436270091FA00E92475 /* Data Fetch */ = {
+			isa = PBXGroup;
+			children = (
+				2815C43A2700921400E92475 /* AdvancedSample.swift */,
+				2815C4392700921400E92475 /* API.swift */,
+				2815C4372700921400E92475 /* Network.swift */,
+				2815C43B2700921400E92475 /* NetworkInterceptorProvider.swift */,
+				2815C4382700921400E92475 /* TokenAddingInterceptor.swift */,
+			);
+			path = "Data Fetch";
+			sourceTree = "<group>";
+		};
+		2815C4532700957E00E92475 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2815C4562700958900E92475 /* DetailViewController.swift */,
+				2815C4572700958900E92475 /* LoginViewController.swift */,
+				2815C4542700958900E92475 /* MasterViewController.swift */,
+				2815C4552700958900E92475 /* ProfileViewController.swift */,
+				2815C4582700958900E92475 /* UIViewController+Alert.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		2815C469270095A200E92475 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2815C4642700959E00E92475 /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2815C46A270095B300E92475 /* GraphSql */ = {
+			isa = PBXGroup;
+			children = (
+				2815C46C270095D300E92475 /* BookTrip.graphql */,
+				2815C46D270095D300E92475 /* CancelTrip.graphql */,
+				2815C46B270095D300E92475 /* LaunchDetails.graphql */,
+				2815C46F270095D300E92475 /* LaunchList.graphql */,
+				2815C46E270095D300E92475 /* Login.graphql */,
+			);
+			path = GraphSql;
+			sourceTree = "<group>";
+		};
+		2815C478270095DB00E92475 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2815C479270095EC00E92475 /* schema.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2815C3F427008A6C00E92475 /* Tootle Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2815C42227008A7500E92475 /* Build configuration list for PBXNativeTarget "Tootle Test" */;
+			buildPhases = (
+				2815C3F127008A6C00E92475 /* Sources */,
+				2815C3F227008A6C00E92475 /* Frameworks */,
+				2815C3F327008A6C00E92475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tootle Test";
+			packageProductDependencies = (
+				2815C4942700A8A900E92475 /* Apollo */,
+				2815C4962700A8A900E92475 /* ApolloSQLite */,
+				2815C4992700A8F900E92475 /* Keychain */,
+				2815C49F2700A97200E92475 /* SDWebImageSwiftUI */,
+				2815C4A52700A9C200E92475 /* KeychainSwift */,
+			);
+			productName = "Tootle Test";
+			productReference = 2815C3F527008A6C00E92475 /* Tootle Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2815C40D27008A7500E92475 /* Tootle TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2815C42527008A7500E92475 /* Build configuration list for PBXNativeTarget "Tootle TestTests" */;
+			buildPhases = (
+				2815C40A27008A7500E92475 /* Sources */,
+				2815C40B27008A7500E92475 /* Frameworks */,
+				2815C40C27008A7500E92475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2815C41027008A7500E92475 /* PBXTargetDependency */,
+			);
+			name = "Tootle TestTests";
+			productName = "Tootle TestTests";
+			productReference = 2815C40E27008A7500E92475 /* Tootle TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2815C41827008A7500E92475 /* Tootle TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2815C42827008A7500E92475 /* Build configuration list for PBXNativeTarget "Tootle TestUITests" */;
+			buildPhases = (
+				2815C41527008A7500E92475 /* Sources */,
+				2815C41627008A7500E92475 /* Frameworks */,
+				2815C41727008A7500E92475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2815C41B27008A7500E92475 /* PBXTargetDependency */,
+			);
+			name = "Tootle TestUITests";
+			productName = "Tootle TestUITests";
+			productReference = 2815C41927008A7500E92475 /* Tootle TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2815C3ED27008A6C00E92475 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					2815C3F427008A6C00E92475 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					2815C40D27008A7500E92475 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2815C3F427008A6C00E92475;
+					};
+					2815C41827008A7500E92475 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2815C3F427008A6C00E92475;
+					};
+				};
+			};
+			buildConfigurationList = 2815C3F027008A6C00E92475 /* Build configuration list for PBXProject "Tootle Test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2815C3EC27008A6C00E92475;
+			packageReferences = (
+				2815C4932700A8A900E92475 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				2815C4982700A8F900E92475 /* XCRemoteSwiftPackageReference "Keychain.swift" */,
+				2815C49E2700A97200E92475 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				2815C4A42700A9C200E92475 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
+			productRefGroup = 2815C3F627008A6C00E92475 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2815C3F427008A6C00E92475 /* Tootle Test */,
+				2815C40D27008A7500E92475 /* Tootle TestTests */,
+				2815C41827008A7500E92475 /* Tootle TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2815C3F327008A6C00E92475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2815C4652700959F00E92475 /* Main.storyboard in Resources */,
+				2815C47A270095EC00E92475 /* schema.json in Resources */,
+				2815C40827008A7500E92475 /* LaunchScreen.storyboard in Resources */,
+				2815C40527008A7500E92475 /* Assets.xcassets in Resources */,
+				2815C470270095D300E92475 /* LaunchDetails.graphql in Resources */,
+				2815C472270095D300E92475 /* CancelTrip.graphql in Resources */,
+				2815C471270095D300E92475 /* BookTrip.graphql in Resources */,
+				2815C474270095D300E92475 /* LaunchList.graphql in Resources */,
+				2815C473270095D300E92475 /* Login.graphql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2815C40C27008A7500E92475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2815C41727008A7500E92475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2815C3F127008A6C00E92475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2815C4592700958900E92475 /* MasterViewController.swift in Sources */,
+				2815C43C2700921400E92475 /* Network.swift in Sources */,
+				2815C45B2700958900E92475 /* DetailViewController.swift in Sources */,
+				2815C43D2700921400E92475 /* TokenAddingInterceptor.swift in Sources */,
+				2815C4402700921400E92475 /* NetworkInterceptorProvider.swift in Sources */,
+				2815C3F927008A6C00E92475 /* AppDelegate.swift in Sources */,
+				2815C45A2700958900E92475 /* ProfileViewController.swift in Sources */,
+				2815C40327008A6C00E92475 /* Tootle_Test.xcdatamodeld in Sources */,
+				2815C3FB27008A6C00E92475 /* SceneDelegate.swift in Sources */,
+				2815C43E2700921400E92475 /* API.swift in Sources */,
+				2815C45C2700958900E92475 /* LoginViewController.swift in Sources */,
+				2815C43F2700921400E92475 /* AdvancedSample.swift in Sources */,
+				2815C45D2700958900E92475 /* UIViewController+Alert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2815C40A27008A7500E92475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2815C41327008A7500E92475 /* Tootle_TestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2815C41527008A7500E92475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2815C41E27008A7500E92475 /* Tootle_TestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2815C41027008A7500E92475 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2815C3F427008A6C00E92475 /* Tootle Test */;
+			targetProxy = 2815C40F27008A7500E92475 /* PBXContainerItemProxy */;
+		};
+		2815C41B27008A7500E92475 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2815C3F427008A6C00E92475 /* Tootle Test */;
+			targetProxy = 2815C41A27008A7500E92475 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2815C40627008A7500E92475 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2815C40727008A7500E92475 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2815C42027008A7500E92475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2815C42127008A7500E92475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2815C42327008A7500E92475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tootle Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.App.TootleDemo.Tootle-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2815C42427008A7500E92475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tootle Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.App.TootleDemo.Tootle-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2815C42627008A7500E92475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tootle TestTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.App.TootleDemo.Tootle-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tootle Test.app/Tootle Test";
+			};
+			name = Debug;
+		};
+		2815C42727008A7500E92475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tootle TestTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.App.TootleDemo.Tootle-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tootle Test.app/Tootle Test";
+			};
+			name = Release;
+		};
+		2815C42927008A7500E92475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tootle TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.App.TootleDemo.Tootle-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tootle Test";
+			};
+			name = Debug;
+		};
+		2815C42A27008A7500E92475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tootle TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.App.TootleDemo.Tootle-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tootle Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2815C3F027008A6C00E92475 /* Build configuration list for PBXProject "Tootle Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2815C42027008A7500E92475 /* Debug */,
+				2815C42127008A7500E92475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2815C42227008A7500E92475 /* Build configuration list for PBXNativeTarget "Tootle Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2815C42327008A7500E92475 /* Debug */,
+				2815C42427008A7500E92475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2815C42527008A7500E92475 /* Build configuration list for PBXNativeTarget "Tootle TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2815C42627008A7500E92475 /* Debug */,
+				2815C42727008A7500E92475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2815C42827008A7500E92475 /* Build configuration list for PBXNativeTarget "Tootle TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2815C42927008A7500E92475 /* Debug */,
+				2815C42A27008A7500E92475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2815C4932700A8A900E92475 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.49.1;
+			};
+		};
+		2815C4982700A8F900E92475 /* XCRemoteSwiftPackageReference "Keychain.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GroupeMINASTE/Keychain.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+		2815C49E2700A97200E92475 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+		2815C4A42700A9C200E92475 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2815C4942700A8A900E92475 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2815C4932700A8A900E92475 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		2815C4962700A8A900E92475 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2815C4932700A8A900E92475 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		2815C4992700A8F900E92475 /* Keychain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2815C4982700A8F900E92475 /* XCRemoteSwiftPackageReference "Keychain.swift" */;
+			productName = Keychain;
+		};
+		2815C49F2700A97200E92475 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2815C49E2700A97200E92475 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		2815C4A52700A9C200E92475 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2815C4A42700A9C200E92475 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		2815C40127008A6C00E92475 /* Tootle_Test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2815C40227008A6C00E92475 /* Tootle_Test.xcdatamodel */,
+			);
+			currentVersion = 2815C40227008A6C00E92475 /* Tootle_Test.xcdatamodel */;
+			path = Tootle_Test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2815C3ED27008A6C00E92475 /* Project object */;
+}
